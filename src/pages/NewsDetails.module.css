@@ -1,0 +1,43 @@
+.newsDetails img {
+  width: 100%;
+  height: auto;
+}
+
+.newsDetails a {
+  color: var(--text-success);
+}
+
+.newsDetails a:hover {
+  color: var(--text-success);
+  text-decoration: underline;
+}
+
+.newsDetails iframe[src*="youtube"] {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.newsDetails h2,
+.newsDetails h3 {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.newsDetails figcaption {
+  font-size: 0.875rem;
+}
+
+/* Stilizam alerta. */
+#alert {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+@media (max-width: 576px) {
+  #alert {
+    width: calc(100vw - 20px);
+  }
+}
